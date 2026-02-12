@@ -26,13 +26,13 @@
 }
 
 .single-item .btn:hover {
-  background: #0e7490;
+  background: #0e9051;
 }
 
 .single-item .remove-btn {
-  background: #222;
+  background: #02350f;
 }
 
 .single-item .remove-btn:hover {
-  background: #900e0e;
+  background: #580622;
 }

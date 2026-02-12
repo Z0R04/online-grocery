@@ -9,17 +9,17 @@
 body {
   background: #eee;
   font-family: Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.2;
-  color: #222;
+  color: #090909;
 }
 
 .section-center {
   margin: 0 auto;
-  margin-top: 8rem;
-  max-width: 30rem;
+  margin-top: 10rem;
+  max-width: 24rem;
   background: #fff;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   padding: 2rem;
   position: relative;
 }
