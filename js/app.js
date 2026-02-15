@@ -11,14 +11,12 @@ function render() {
   const itemsElement = createItems(items);
   app.appendChild(itemsElement);
 }
-
-// Initialize App
 render();
 
 // Edit Completed Function
-export function editCompleted(itemId) {
+export function editCompleted(id) {
   items = items.map((item) => {
-    if (item.id === itemId) {
+    if (item.id === id) {
       return { ...item, completed: !item.completed };
     }
     return item;
