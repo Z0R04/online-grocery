@@ -1,4 +1,4 @@
-import { addItem } from "./app.js";
+import { addItem, updateItemName } from "./app.js";
 
 // Create Form Element
 export function createForm() {
@@ -11,6 +11,7 @@ export function createForm() {
         type="text"
         class="form-input"
         placeholder="e.g. eggs"
+        
       />
       <button type="submit" class="btn">
         add item

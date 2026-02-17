@@ -72,3 +72,16 @@ export function updateItemName(newName) {
   render();
   setTimeout(() => alert("Item Updated Successfully!"), 0);
 }
+// Set Edit ID Function
+export function setEditId(itemId) {
+  editId = itemId;
+  render();
+
+  // Focus input after render
+  setTimeout(() => {
+    const input = document.querySelector(".form-input");
+    if (input) {
+      input.focus();
+    }
+  }, 0);
+}
