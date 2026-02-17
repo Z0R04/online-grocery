@@ -7,11 +7,13 @@
 }
 
 body {
-  background: #eee;
+  background:  linear-gradient(135deg, #d4f4dd, #b8e6c1);
   font-family: Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 100;
   line-height: 1.2;
-  color: #090909;
+  color: #186929;
+  display: flex;
+
 }
 
 .section-center {

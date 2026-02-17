@@ -24,15 +24,14 @@
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
 }
-
 .single-item .btn:hover {
-  background: #0e9051;
+   background:  linear-gradient(135deg, #013911, #b8e6c1);
 }
 
 .single-item .remove-btn {
-  background: #02350f;
+    background:  linear-gradient(135deg, #0a565d, #b8e6c1);
 }
 
-.single-item .remove-btn:hover {
-  background: #580622;
+.single-item .edit-btn {
+  background:  linear-gradient(135deg, #02221f, #b8e6c1);
 }
