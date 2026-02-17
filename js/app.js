@@ -61,6 +61,7 @@ export function deleteItem(id) {
     alert("Item deleted successfully!");
   }, 0);
 }
+
 export function updateItemName(newName) {
   items = items.map((item) => {
     if (item.id === editId) {
@@ -72,6 +73,8 @@ export function updateItemName(newName) {
   render();
   setTimeout(() => alert("Item Updated Successfully!"), 0);
 }
+
+
 // Set Edit ID Function
 export function setEditId(itemId) {
   editId = itemId;

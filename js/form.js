@@ -1,7 +1,7 @@
 import { addItem, updateItemName } from "./app.js";
 
 // Create Form Element
-export function createForm() {
+export function createForm(editId, itemToEdit) {
   const form = document.createElement("form");
 
   form.innerHTML = `
@@ -14,7 +14,7 @@ export function createForm() {
         
       />
       <button type="submit" class="btn">
-        add item
+        ${editId ? "edit item" : "add item"}
       </button>
     </div>
   `;
@@ -24,12 +24,13 @@ export function createForm() {
     const input = form.querySelector(".form-input");
     const value = input.value.trim();
 
-    if (!value) {
-      alert("Please provide value");
-      return;
+    // added conditions
+    if (editId) {
+      updateItemName(value);
+    } else {
+      addItem(value);
     }
 
-    addItem(value);
     input.value = "";
   });
 
